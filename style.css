@@ -69,7 +69,7 @@ body {
     .name {
         left: 10%;
         font-size: 13px;
-        width: 90%;
+        width: 70%;
         white-space: normal;
         padding: 15px 30px;
     }
@@ -158,20 +158,19 @@ p {
 
 .dream-card {
     background:
-        linear-gradient(rgba(220, 215, 215, 0.85), rgba(200, 192, 192, 0.85)),
-        url('./image/background.jpg') center/cover no-repeat;
+        url('./image/backgroung.png') center/cover no-repeat;
     border: 0px solid #201f1f;
     border-radius: 24px;
     box-shadow: 0 0  rgba(227, 218, 218, 0.533);
-    padding: 1.5rem 1rem 1.5rem 1rem;
-    width: 340px;
+    padding: 1.5rem 1.5rem 2rem 1.5rem;
+    width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
     top: 50%;
     left: 50%;
-    min-height: 450px;
+    min-height: 300px;
     filter: drop-shadow(0 0 0px #545353);
     opacity: 0;
 }
@@ -217,15 +216,15 @@ p {
 }
 
 .emojis {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    margin-bottom: -0.2rem;
     margin-top: 0.5rem;
     z-index: 1;
 }
 
 .dream-img {
-    width: 90%;
-    height: 300px;
+    width: 70%;
+    height: 400px;
     object-fit: cover;
     object-position: top;
     border-radius: 8px;
@@ -238,8 +237,8 @@ p {
 
 .dream-text {
     font-family: 'Kristi', cursive;
-    font-size: 1.9rem;
-    margin-top: 0.5rem;
+    font-size: 2.7rem;
+    margin-top: -1.0rem;
     color: #222;
     text-align: center;
     z-index: 1;
