@@ -13,9 +13,11 @@
     </script>
 </head>
 <body>
-    <audio id="backgroundMusic" autoplay  loop>
+    <audio id="backgroundMusic" autoplay loop>
         <source src="./audio/for_you.mp3" type="audio/mp3">
+        <source src="./audio/for_you.wav" type="audio/wav">
     </audio>
+    <button id="playButton" style="display: none;">Play</button>
     <div class="name centered" id="main-title">
         <h1 id="you">This Song Is For You</h1>
         <p>❤️🫶🧿</p>
@@ -61,25 +63,12 @@
         <img class="dream-img" src="./image/8.jpg" alt="Dream Girl">
         <div class="dream-text">Main Chhod yaar Wala</div>
     </div>
-        <script>
-        document.addEventListener('DOMContentLoaded', function() {
+    <script>
+        window.onload = function() {
             const audio = document.getElementById('backgroundMusic');
-            
-            // Function to play audio
-            function playAudio() {
-                audio.play().catch(function(error) {
-                    console.log("Audio play failed:", error);
-                });
-            }
-            
-            // Try to play on any user interaction
-            document.addEventListener('click', playAudio, { once: true });
-            document.addEventListener('touchstart', playAudio, { once: true });
-            document.addEventListener('keydown', playAudio, { once: true });
-            
-            // Also try to play when the page loads
-            playAudio();
-        });
+            audio.volume = 1.0;
+            audio.play();
+        };
     </script>
 </body>
 </html>
